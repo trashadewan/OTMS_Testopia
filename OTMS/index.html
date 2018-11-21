@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<body>
+<H1> <center>TESTOPIA </center></H1><BR>
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/navbar.css">
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Testopia</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li ><A href="student/Index.php">Student Login</a>
+	      <li><a href="faculty/Index.php">Faculty Logiin</a></li>
+		    <li><a href="admin/Index.php">Dean Login</a></li>   
+      </ul>
+    </div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+</nav>
+<script src="js/jquery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<title> Testopia
+</title>
+        <script language="JavaScript">
+      var i = 0; 
+            var path = new Array();
+            // LIST OF IMAGES 
+             path[0] = "pictures/1.jpg"; 
+             path[1] = "pictures/2.jpg"; 
+             path[2] = "pictures/3.jpg"; 
+             path[3] = "pictures/4.jpg"; 
+             path[4] = "pictures/5.jpg"; 
+            function swapImage() 
+            { 
+               document.slide.src = path[i];
+               if(i < path.length - 1) i++;
+               else i = 0; 
+               setTimeout("swapImage()",3000); 
+            }
+            window.onload=swapImage;
+          </script> 
+    <head>
+  <body><center>
+    <div style=" padding-left : '20px' ,margin-left:'50px'">
+    <img height="400" name="slide" src="1.jpg" width="600" /></center>
+  </div>
+  </body>
+</html>
